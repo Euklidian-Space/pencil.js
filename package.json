@@ -8,6 +8,11 @@
   ],
   "unpkg": "dist/pencil.min.js",
   "jsdelivr": "dist/pencil.min.js",
+  "jest": {
+    "setupFiles": [
+      "jest-canvas-mock"
+    ]
+  },
   "scripts": {
     "lint": "eslint pencil.js modules/**/*.js",
     "test": "jest-webpack",
@@ -63,9 +68,11 @@
     "@babel/preset-env": "^7.0.0-beta.40",
     "@gmartigny/eslint-config": "^1.0.2",
     "babel-loader": "^8.0.0-beta.2",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.18.1",
     "eslint-plugin-import": "^2.9.0",
     "jest": "^22.4.2",
+    "jest-canvas-mock": "^1.0.2",
     "jest-webpack": "^0.4.0",
     "lerna": "^2.9.0",
     "uglifyjs-webpack-plugin": "^1.2.2",
